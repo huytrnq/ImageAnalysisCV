@@ -1,0 +1,11 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug program",
+            "type": "lldb",
+            "program": "${workspaceFolder}/build/bin/program",
+            "cwd": "${dbgconfig:datadir}" // will be expanded to "/home/user/mydata/dataset1"
+        }
+    ],
+}
