@@ -1,14 +1,8 @@
-cmake_minimum_required(VERSION 3.24.3)
+cmake_minimum_required(VERSION 3.24)
 project(trafficlight LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(BUILD_TESTING OFF)
-# set(CMAKE_BUILD_TYPE Debug)
+set(CMAKE_CXX_EXTENSIONS OFF)
 
-find_package(OpenCV REQUIRED)
-include_directories(${OpenCV_INCLUDE_DIRS})
-
-add_executable(trafficlight src/main.cpp)
-
-target_link_libraries(trafficlight ${OpenCV_LIBS})
+add_subdirectory(src)
