@@ -9,7 +9,8 @@
 
 class Image
 {
-    cv::Mat image;
+    private:
+        cv::Mat image;
     public:
         // 1st constructor
         Image(const std::string &image_path);
@@ -18,6 +19,7 @@ class Image
 
         // methods
         void show(const std::string &window_name="image");
+        cv::Mat get_image();
 };
 
 

@@ -11,3 +11,10 @@ void Image::show(const std::string &window_name)
     cv::waitKey(0);
 }
 
+Image::~Image(){
+
+};
+
+cv::Mat Image::get_image(){
+    return image;
+}
