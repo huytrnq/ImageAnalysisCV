@@ -1,5 +1,14 @@
 <h1>Advance Image Analysis</h1>
 
+## Table of Contents
+- [Color Images](#color-images)
+
+
+## Color Images
+- Intensity Transformation
+    - [x] Linear Stretching 
+    -  Histogram Equalization
+
 # NOTE: 
 - Cmake debugger configuration is not working properly, so use the following configuration in `settings.json` to use lldb debugger.
     ```
