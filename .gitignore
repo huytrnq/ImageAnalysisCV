@@ -23,3 +23,6 @@ bin/
 
 # Dependency directories
 vendor/
+
+# image files
+exmaple_images/
