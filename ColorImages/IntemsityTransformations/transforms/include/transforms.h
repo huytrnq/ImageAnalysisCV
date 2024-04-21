@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 #include <opencv2/opencv.hpp>
 
@@ -9,6 +10,7 @@
 class Transforms{
     
     private:
+        // For log transformation
         int L;
     public:
         /**
@@ -27,4 +29,8 @@ class Transforms{
          * @param output The output image after applying the transformation.
          */
         void linear_stretching(const cv::Mat input, cv::Mat &output);
+
+        std::vector<int> calculateHistogram(const cv::Mat image);
+        std::vector<int> cumulativeHistogramCal(const std::vector<int> hist);
+        void histogram_eq(const cv::Mat input, cv::Mat &output);
 };
